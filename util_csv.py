@@ -1,5 +1,6 @@
 import csv
 
+# Get a list of student emails from roster
 def get_student_emails():
     email_column_name = 'email'
     email_column_index = 0
@@ -14,6 +15,7 @@ def get_student_emails():
                 emails.append(row[email_column_index].strip())
     return emails
 
+# Get a mapping of team name to a list of student emails from teams.csv
 def get_team_assignments():
     assignments = {}
 
@@ -29,6 +31,7 @@ def get_team_assignments():
 
     return assignments
 
+# Helper: find column index from column name
 def find_column(columns, name):
     for index, column in enumerate(columns):
         if column == name:
