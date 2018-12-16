@@ -16,7 +16,9 @@
 
 - Set up token environment variable:
 	1. Open terminal and paste the access token to `~/.bashrc` or `~/.bash_profile`:
+
 		`export SLACK_TOKEN=[Access Token Without the brackets]`
+
 	2. Take bash file to effect: `source ~/.bashrc` or `source ~/.bash_profile`
 
 ### Run App
